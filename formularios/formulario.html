@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Título do meu website</title>
+		<meta charset="utf-8" />
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				font-family: Helvetica, sans-serif, Arial;
+			}
+
+			html,body{
+				height:100%;
+			}
+
+			form{
+				width: 96%;
+				max-width: 600px;
+				margin:30px auto; 
+				text-align: center;
+				color: rgb(105, 105, 105);
+			}
+
+			form fieldset{
+				padding: 20px 30px;
+				border:1px solid #ccc;
+			}
+
+			form legend{
+				text-align: left;
+				font-size: 17px;
+				color:rgb(130,130,130);
+			}
+
+			form .style_title{
+				display: inline-block;
+				margin-top:30px;
+				width: 80%;
+				padding: 0px 0px;
+				text-align: left;
+				text-decoration-color: #ccc;
+			}
+			
+			form .style_title label{
+				display: inline-block;
+				text-align: left;
+				color: rgb(105, 105, 105);
+			}
+
+			form h4{
+				margin-top:20px;
+				color: rgb(100,100,100);
+			}
+		</style>
+		<!--link href="css/style.css" rel="stylesheet" type="text/css"-->
+	</head>
+
+	<body>
+
+		<form>
+			<fieldset>
+				<legend>Template de teste</legend>
+				<div class="style_title"><!--input type="text" name="nome" placeholder="Digite o seu nome" /-->
+					<h4>Primeiro</h4>
+					<br>
+					<p>
+						Esse template foi feito para testar a construção de um documento,
+						para avalidar o comportamento da aplicação na subistituição de variaveis
+						como essas <<variavel_iniciial>>.
+					</p>
+				</div>
+				<div class="style_title"><!--input type="text" name="nome" placeholder="Digite o seu nome" /-->
+					<h4>Dados Adicionais</h4>
+					<br>
+					<div>
+						<div>
+							<label>Nome:</label>
+							<br>
+							<label><<nome_pessoa>></label>
+						</div>
+						<div>
+							<label>Email:</label>
+							<br>
+							<label><<email_pessoal>></label>
+						</div>
+						<div>
+							<label>Cidade:</label>
+							<br>
+							<label><<cidade>></label>
+						</div>
+						<div>
+							<label>Estado:</label>
+							<br>
+							<label><<estado>></label>
+						</div>
+						<div>
+							<label>Data de Nascimento:</label>
+							<br>
+							<label><<data_nascimento>></label>
+						</div>
+						<div>
+							<label>Estado Civil:</label>
+							<br>
+							<label><<estado_civil>></label>
+						</div>
+						<div>
+							<label>Idade:</label>
+							<br>
+							<label><<idade>></label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
